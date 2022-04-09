@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1645023851 source:e:\itmo_studies\digitculture_programming\proga_2_5\swap.cpp
+
+1645041026 e:\itmo_studies\digitculture_programming\proga_2_5\swap.h
+	<iostream>
+	<vector>
+
+1645040905 source:e:\itmo_studies\digitculture_programming\proga_2_5\main.cpp
+	<iostream>
+	"5.swap.h"
+
+1645023554 e:\itmo_studies\digitculture_programming\proga_2_5\swap.cpp
+	<iostream>
+	"5.swap.h"
