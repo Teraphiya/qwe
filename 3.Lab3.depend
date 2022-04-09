@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1582472834 source:d:\!_itmo\Программирование\Семестр_2\lab3\lab3\main.cpp
+	<iostream>
+	<stdio.h>
+	<math.h>
+	"ComplexDigit.h"
+	"Array.h"
+
+1582472510 source:d:\!_itmo\Программирование\Семестр_2\lab3\lab3\complexdigit.cpp
+	"ComplexDigit.h"
+	<math.h>
+	<iostream>
+
+1582472502 d:\!_itmo\Программирование\Семестр_2\lab3\lab3\complexdigit.h
+
+1582486379 source:d:\!_itmo\Программирование\Семестр_2\lab3\lab3\array.cpp
+	<iostream>
+	"Array.h"
+
+1582472022 d:\!_itmo\Программирование\Семестр_2\lab3\lab3\array.h
+
