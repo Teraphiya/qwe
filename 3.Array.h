@@ -19,4 +19,4 @@ public:
     bool operator < (Array mas);
 };
 
-#endif // ARRAY_H_INCLUDED
+#endif
