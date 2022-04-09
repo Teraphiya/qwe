@@ -4,9 +4,11 @@
 #include "3.ComplexDigit.h"
 #include "3.Array.h"
 
+//23
+
 int main()
 {
-    /// ComplexDigit check
+    //Проверяем комплексные
     ComplexDigit сd1(2, 3);
     ComplexDigit cd2(1, 1);
 
@@ -24,9 +26,7 @@ int main()
     cd3 = cd1 * 2.5;
     cd3.display();
 
-
-
-    /// Array check
+    //Проверяем массив
     Array arr1(4);
     Array arr2(3);
 
@@ -46,122 +46,3 @@ int main()
 
     return 0;
 }
-
-/**
-class ComplexDigit
-{
-private:
-    int realPart;
-    int phantomPart;
-public:
-    ComplexDigit(int realPart, int phantomPart)
-    {
-        this->realPart = realPart;
-        this->phantomPart = phantomPart;
-    }
-    ComplexDigit()
-    {
-        this->realPart = 0;
-        this->phantomPart = 0;
-    }
-
-    ComplexDigit operator + (ComplexDigit d)
-    {
-        return ComplexDigit(this->realPart + d.realPart, this->phantomPart + d.phantomPart);
-    }
-    /// (2 + 3i)*(-4 * 1i)
-    ComplexDigit operator * (ComplexDigit d)
-    {
-        return ComplexDigit(this->realPart * d.realPart - this->phantomPart * d.phantomPart,
-                            this->realPart * d.phantomPart + this->phantomPart * d.realPart);
-    }
-    ComplexDigit operator * (float c)
-    {
-        return ComplexDigit(this->realPart * c, this->phantomPart * c);
-    }
-    operator double() const
-    {
-        return sqrt(this->realPart * this->realPart * 1.0 +
-                    this->phantomPart * this->phantomPart * 1.0);
-    }
-
-    void display()
-    {
-        if (this->phantomPart >= 0)
-        {
-            std::cout << this->realPart << " + " << this->phantomPart << "i" << std::endl;
-        }
-        else
-        {
-            std::cout << this->realPart << " - " << this->phantomPart << "i" << std::endl;
-        }
-    }
-};
-
-class Array
-{
-private:
-    int *arr;
-    int n;
-public:
-    Array()
-    {
-        this->n = 1;
-        arr = new int[this->n];
-        for (int i = 0; i < this->n; i++)
-        {
-            this->arr[i] = i + 1;
-        }
-    }
-    Array(int n)
-    {
-        this->n = n;
-        arr = new int[this->n];
-        for (int i = 0; i < this->n; i++)
-        {
-            this->arr[i] = i + 1;
-        }
-    }
-    int getSize()
-    {
-        return this->n;
-    }
-    void display()
-    {
-        for (int i = 0; i < this->n; i++)
-        {
-            std::cout << this->arr[i] << " ";
-        }
-        std::cout << std::endl;
-    }
-    void addElem(int element)
-    {
-        this->arr[n] = element;
-        this->n++;
-    }
-    Array operator + (Array mas)
-    {
-        for (int i = 0; i < mas.n; i++)
-        {
-            this->arr[this->n++] = mas.arr[i];
-        }
-        return *this;
-    }
-    bool operator == (Array mas)
-    {
-        return (this->n == mas.n);
-    }
-    bool operator != (Array mas)
-    {
-        return (this->n != mas.n);
-    }
-    bool operator > (Array mas)
-    {
-        return (this->n > mas.n);
-    }
-    bool operator < (Array mas)
-    {
-        return (this->n < mas.n);
-    }
-};
-*/
