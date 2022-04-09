@@ -16,4 +16,4 @@ public:
     void display();
 };
 
-#endif // COMPLEXDIGIT_H_INCLUDED
+#endif
