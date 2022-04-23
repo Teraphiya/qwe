@@ -9,8 +9,7 @@ using namespace std;
 template <class T>
 int swap_numbers(T& a, T& b)
 {
-    T t;
-    t = a;
+    T t = a; // or T t(a)
     a = b;
     b = t;
     return 0;
