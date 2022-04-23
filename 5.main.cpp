@@ -3,8 +3,6 @@
 
 using namespace std;
 
-//23 вариант. функция C, класс H
-
 int main()
 {
     int a, b;
