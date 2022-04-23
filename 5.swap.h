@@ -15,41 +15,26 @@ int swap_numbers(T& a, T& b)
     return 0;
 }
 
-template <typename T>
+template <typename T, int N, int M>
 class Matrix {
 public:
-    int N, M;
-    vector< vector<double> > mat;
+    vector< vector<T> > mat;
     Matrix()
     {
-        N = 2;
-        M = 2;
-
         for (int i = 0; i < N; i++)
         {
-            vector<double> rw;
-            for (int j = 0; j < M; j++)
-                rw.push_back(i + j);
-            mat.push_back(rw);
-        }
-    };
-    Matrix(int r, int c)
-    {
-        N = r;
-        M = c;
-        for (int i = 0; i < N; i++)
-        {
-            vector<double> rw;
+            vector<T> rw;
             for (int j = 0; j < M; j++)
                 rw.push_back(i + j);
             mat.push_back(rw);
         }
     };
     int get(int i, int j) {
-        if(i >= 0 && i<N && j >= 0 && j<M) {
-            return mat[i][j];
-        } else {
-            cout << "WRONG INDEX!\n";
+        T el;
+        try {
+            return mat.at(i).at(j);
+        } catch (out_of_range& e) {
+            cout<<e.what()<<endl;
             return -1;
         }
     };
